@@ -1,0 +1,30 @@
+Explanation for variables:
+
+X_train: read data from X_train.txt
+
+Y_train: read data from Y_train.txt
+
+subject_train: read data from subject_train.txt
+
+X_test: read data from X_test.txt
+
+Y_test: read data from Y_test.txt
+
+subject_test: read data from subject_test.txt
+
+varnam: read data from features.txt
+
+actlab: read data from activity_labels.txt
+
+X: merged data from X_train and X_test using rbind()
+
+Y: merged data from Y_train and Y_test using rbind()
+
+Subject: merged data from subject_train and subject_test  using rbind()
+
+varr: Extracts only the measurements on the mean and standard deviation for each measurement. Use grep command to get column indexes for variable name contains "mean()" or "std()"
+
+res: merging the processes X, actlab, and Subject using rbind()
+
+resavg: average of each variable for each activity and each subject
+
